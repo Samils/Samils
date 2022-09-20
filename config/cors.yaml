@@ -1,0 +1,19 @@
+# Access Controll
+# - Defining access controll
+# - informations to provide 
+# - or not http requests from 
+# - different server addresses
+access-control:
+  allow:
+    methods:
+      - GET
+      - POST
+    origin:
+      - http://localhost:3000
+    headers:
+      - Content-Type
+      - X-Requested-With
+      - Accept
+  request-headers:
+    - Content-Type
+    - X-Requested-With

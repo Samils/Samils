@@ -1,0 +1,7 @@
+@import { Fragment } from 'capsule'
+
+@def NameList
+  <Fragment />
+@end
+
+@export NameList

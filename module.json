@@ -1,0 +1,115 @@
+{
+	"package": "App Name Here",
+	"description": "My App is a great",
+	"author": {
+		"name": "Agostinho Sambo Lopes",
+		"site": "https://agostinhosamil.github.io",
+		"description": "Trying 2know what I've2",
+		"links": [
+			"https://www.facebook.com/agostinhosaml",
+			"https://www.linkedin.com/in/agostinhosaml",
+			"https://www.github.com/agostinhosamil"
+		]
+	},
+
+  "scripts": {
+    "hello": "puts Hello, World..!",
+    "test": "puts no test was specified",
+    "start": "sami-dev-server --strict=False",
+
+    "build": "build --static=True --strict=False --config=config/build.yaml",
+
+    "testv": "gogue:ccss:compile @views/pages/mytest/style3.css --minify=False"
+  },
+
+  "contributors": [
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    },
+    {
+      "name": "Lopes <lopes01@ysarein.com>",
+      "site": "https://about.ysarein.com/lopes01",
+      "description": "Some good sayings",
+      "links": [
+        "https://www.facebook.com/lopes01-ys"
+      ]
+    }
+  ],
+
+	"keywords": [
+		"Samils", "Sami", "SAPP"
+	],
+
+	"repository": {
+		"adapter": "gh",
+		"remote origin": "/agostinhosamil/ilssite1",
+		"branch": "master"
+	},
+
+	"dependencies": {
+		"sami": "^1.0",
+		"@http": "^1.0",
+		"@mysql":"^1.0",
+		"@kery": "^1.0",
+		"@php":  "^1.0",
+		"Sammy\\Packs": "^1"
+	},
+
+	"devDependencies": {
+		"sami/cli": "^1",
+		"hope": "^1.1"
+	}
+}

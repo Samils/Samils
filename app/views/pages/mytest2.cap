@@ -1,0 +1,198 @@
+@def MyTest ({data: $users = []})
+  <div>
+    <h1>MyTest</h1>
+    <br />
+
+    @if true
+      <div />
+      @for $z = 0; $z < 100; $z++
+        <button>Text - %{ $z }</button>
+        <br />
+
+        @if count ($users) >= 1
+          @for $x = 0; $x < 100; $x++
+            @if $x == 5
+              @each $number in range (1, 1000)
+                <span>Number => %{ $number }</span>
+                <div>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                  <h1>Hey</h1>
+                </div>
+              @end # i => 11
+
+              @if (1 === $this->props->typeDefined || $this->props->name === :sam)
+                <span>I am Sam!!!!</span>
+              @end
+
+              <h1>Tá</h1>
+            @end
+            <p>N => %{ $x }</p>
+          @end
+          <li>User Id => %{ $user }</li>
+        @end
+
+      @end
+
+
+      <button />
+    @end
+
+
+
+    @if true && count($this->users) >= 1
+      <div />
+      @for $z = 0; $z < 100; $z++
+        <button>Text - %{ $z }</button>
+        <br />
+
+        @if count ($users) >= 1
+          @for $x = 0; $x < 100; $x++
+            @if $x == 5
+              @each $number in range (1, 1000)
+                <span>Number => %{ $number }</span>
+              @end
+
+              @if (1 === $this->props->typeDefined || $this->props->name === :sam)
+                <span>I am Sam!!!!</span>
+              @end
+
+              <h1>Tá</h1>
+            @end
+            <p>N => %{ $x }</p>
+          @end
+          <li>User Id => %{ $user }</li>
+        @end
+
+      @end
+
+
+      <Fragment>
+        @if !!!false
+          <button />
+        @end
+      </Fragment>
+    @end
+
+
+    @if 2 == $n && (1 === $this->props->typeDefined
+      || $this->props->name === :sam
+      || $this->props->name === :sam
+      || $this->props->name === :saml
+      || $this->props->name === :samj
+      || $this->props->name === :samh
+      || $this->props->name === :samg
+      || $this->props->name === :samf
+      || $this->props->name === :sam54
+      || $this->props->name === :sam567
+      || $this->props->name === :sam5
+      || $this->props->name === :sam56
+      || $this->props->name === :sam4
+      || $this->props->name === :sam3
+      || $this->props->name === :sam2)
+      @if !false
+        @each $char in str_word_count ('Hello, World..!')
+          <p>Char => %{ $char }</p>
+        @end
+        <span>I am Sam!!!!</span>
+      @end
+    @end
+
+    @if 945 == $y && (1 === $this->props->typeDefined
+      || $this->props->name === :sam
+      || $this->props->name === :sam
+      || $this->props->name === :saml
+      || $this->props->name === :samj
+      || $this->props->name === :samh
+      || $this->props->name === :samg
+      || $this->props->name === :samf
+      || $this->props->name === :sam54
+      || $this->props->name === :sam567
+      || $this->props->name === :sam5
+      || $this->props->name === :sam56
+      || $this->props->name === :sam4
+      || $this->props->name === :sam3
+      || $this->props->name === :sam2)
+      @if !false
+        @each $char in str_word_count ('Hello, World..!')
+          <p>Char => %{ $char }</p>
+        @end
+        <span>I am Sam!!!!</span>
+      @end
+    @end
+
+    @if 873 == $z && (1 === $this->props->typeDefined
+      || $this->props->name === :sam
+      || $this->props->name === :sam
+      || $this->props->name === :saml
+      || $this->props->name === :samj
+      || $this->props->name === :samh
+      || $this->props->name === :samg
+      || $this->props->name === :samf
+      || $this->props->name === :sam54
+      || $this->props->name === :sam567
+      || $this->props->name === :sam5
+      || $this->props->name === :sam56
+      || $this->props->name === :sam4
+      || $this->props->name === :sam3
+      || $this->props->name === :sam2)
+      @if !false
+        @each $char in str_word_count ('Hello, World..!')
+          <p>Char => %{ $char }</p>
+        @end
+        <span>I am Sam!!!!</span>
+      @end
+    @end
+
+    @if 873 == $z && (1 === $this->props->typeDefined
+      || $this->props->name === :sam
+      || $this->props->name === :sam
+      || $this->props->name === :saml
+      || $this->props->name === :samj
+      || $this->props->name === :samh
+      || $this->props->name === :samg
+      || $this->props->name === :samf
+      || $this->props->name === :sam54
+      || $this->props->name === :sam567
+      || $this->props->name === :sam5
+      || $this->props->name === :sam56
+      || $this->props->name === :sam4
+      || $this->props->name === :sam3
+      || $this->props->name === :sam2)
+      @if !false
+        @each $char in str_word_count ('Hello, World..!')
+          @if in_array ($char, ['H', 'O'])
+            <p />
+
+            <div>
+              HI007
+              @if $this->ya
+                @for $someNumber in $someNumberList
+                  <Number value=%{ $someNumber } />
+                @end
+
+                @for $someAnotherData in $someAnotherDataMap
+                  <Fragment>
+                    <SomeData %{ $someAnotherData } name="Sam" />
+                  </Fragment>
+                @end
+              @end
+            </div>
+          @end
+          <p>Char => %{ $char }</p>
+        @end
+        <span>I am Sam!!!!</span>
+      @end
+    @end
+  </div>
+@end
+
+@export default MyTest

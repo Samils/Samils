@@ -1,0 +1,16 @@
+@import { Header, Container, Panel as Div } as Components from '</components'
+
+@def Way
+   @render Components.Container do
+      @render Components.Header
+
+      <br />
+      <h1>My Way is This</h1>
+
+      @render Components.Div
+      @render Components.Div
+      @render Components.Div
+   @end
+@end
+
+@export default Way

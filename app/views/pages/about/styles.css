@@ -1,0 +1,44 @@
+AboutPageContainer[bg-color="green"] {
+  background-color: var(--bg-color);
+  width: 300px;
+  border-radius: 3px;
+  border: 2px solid #cccddd;
+  padding: 30px;
+  text-align: center;
+
+  p {
+    color: var(--theme-red500);
+  }
+}
+
+h1.Title {
+  color: white;
+  font-family: "Roboto Thin";
+  position: relative;
+  text-transform: uppercase;
+
+  background-color: var(--theme-primary-background-color);
+
+  &:before {
+    content: "a";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    color: black;
+    left: -30px;
+    top: -30px;
+  }
+}
+
+ul.List {
+  padding: 0px;
+  list-style: none;
+}
+
+li.ListItem {
+  list-style-type: none;
+  padding: 0px 0px 7px;
+  color: var(--theme-primary-color);
+  font-family: Roboto;
+}

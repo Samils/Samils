@@ -1,0 +1,18 @@
+@def Text
+  <span>
+    <yield />
+  </span>
+@end
+
+@def Home
+  <h1>Home</h1>
+  <br />
+  <Text>
+    Hello, you are in home page..!
+  </Text>
+
+  <br />
+  <Text>Hello, World..!</Text>
+@end
+
+@export default Home

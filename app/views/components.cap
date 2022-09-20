@@ -1,0 +1,28 @@
+@export Header do
+  <header>
+    <h1>Title Here</h1>
+  </header>
+@end
+
+@export Footer do
+  <footer>
+    <span>Footer Here</span>
+  </footer>
+@end
+
+@export Main do
+  <div class="main container">
+    <yield />
+  </div>
+@end
+
+
+@export Container do
+  <div style="width: 700px;background: red;" class="container">
+    <yield />
+  </div>
+@end
+
+@export Panel do
+  <h4>Panel Component Works..!</h3>
+@end

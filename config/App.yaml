@@ -1,0 +1,8 @@
+# Application bundle Configures
+# @module sami-bundle
+#
+# 'uses' section includes the application
+# dependencies as middlewares and other
+#
+uses:
+  xsami/cors

@@ -1,0 +1,32 @@
+@from './styles.css' import {
+  AboutPageContainer,
+  Title,
+  List,
+  ListItem
+}
+
+@def About $userList
+  <AboutPageContainer bgColor="deepskyblue">
+    <Title>
+      About Us
+    </Title>
+    <br />
+    <main>
+
+      <Fragment>
+        <p>Tema1 Color => %{ $themePrimaryColor }</p>
+      </Fragment>
+
+      <List>
+        @each $user in $userList
+          <ListItem
+            key=%{$user->key}>
+            %{ $user->key }
+          </ListItem>
+        @end
+      </List>
+
+      <p>Hello, we are here to aid you.</p>
+    </main>
+  </AboutPageContainer>
+@end

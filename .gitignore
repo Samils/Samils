@@ -1,0 +1,23 @@
+# File to ignore when pushing the
+# project files to a git repository
+vendor
+
+storage/*/*
+!storage/.keep
+
+desktop.ini
+
+log/*/*
+!log/test/.keep
+
+.DS_Store
+*.pem
+
+# Ignore whole the .xphp files
+# on condition that they was already
+# compiled into common php files and
+# should now be used for production
+*.xphp
+*.php.lock
+
+composer.lock

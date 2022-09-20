@@ -1,0 +1,7 @@
+@import { Fragment } from 'capsule'
+
+@def Field
+  <Fragment />
+@end
+
+@export Field

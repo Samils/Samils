@@ -1,0 +1,53 @@
+/*
+@from './tabList.css' import {
+  TabList,
+  TabListHead,
+  TabListBody,
+  TabListItem
+}
+
+
+@def App $props
+  <Fragment>
+    <TabList>
+      <TabListHead>
+        <Yield />
+      </TabListHead>
+      <TabListBody>
+        @each $n in range (1, 100)
+          <Fragment>
+            @if $n < 5
+              <i icon class="fa fa-flag">&nbsp;</i>
+            @end
+          </Fragment>
+
+          <TabListItem>
+            Num => %{ $n }.
+          </TabListItem>
+        @end
+      </TabListBody>
+    </TabList>
+  </Fragment>
+@end
+
+
+@import { Context as CapsuleContext } from 'capsule'
+@import { Context } from 'material-ui'
+*/
+@def App $props
+  <CapsuleContext>
+    @each $n in range (1, 100)
+      @if $n < 5
+        <Fragment>
+          <i icon class="fa fa-flag">&nbsp;</i>
+        </Fragment>
+      @end
+
+      <TabListItem>
+        Num => %{ $n }.
+      </TabListItem>
+    @end
+
+    <h1>The one is a monster</h1>
+  </CapsuleContext>
+@end

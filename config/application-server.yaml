@@ -1,0 +1,90 @@
+# Application Flux
+# The Current Application Fulx determinates
+# how will ils build the response for each
+# request done to the application scope.
+application_flux: MVC
+# view engine manager
+# is a php module for
+# managing the view engine
+# being used inside the current
+# application
+# by default, this is the
+# view-engine module included
+# in the Sammy pakages.
+# It automatically bootstraps the view engine
+# by executing it's init, config, run and render
+# function included inside the main class whish is
+# named as the view engine (with the same name)
+view engine manager: view-engine
+
+view engine scripts:
+  default:
+    views set_reference --php-module
+
+view engine datas:
+  # view engine args
+  # Arguments to send to the view engine constructor
+  # in order automatically execute it's methods and
+  # do defferent things when bootstrapping it be application-server.
+  # The names in the list bellow are method that are included inside
+  # view engine instance scope, make sure it's truth before keeping an
+  # argument there, 'cause it'll bug the application if the method is no
+  # found in the view-engine object or it does not have permission for doing
+  # that by receiving arguents from this file
+  view engine args:
+    init
+    startConfig
+    buildViews
+  # view engine is the super set including whole
+  # the view featires being used in the views files
+  # or any other part of the application that requires
+  # some information coming from the view to the system.
+  # Changing this value is the way for using the default php
+  # html view (if it is blank [null]) or another view engine
+  # that follows the ils view engine pattern
+  # for more detaila about the ils views engine pattern
+  # go to the ils documentatio at
+  # https://samils.net/views/view-engine
+  view engine: capsule/capsule
+
+  file_extensions:
+    cache.php
+    php
+
+  viewsDir: @views/.dist
+
+application_orm: sami/base
+application_orm_config:
+  models_base: false
+  auto_connect: true
+  migrations_path: @db/migrations
+  seeders_path: @db/seeders
+  factories_path: @db/factory
+  procedures_path: @db/procedures
+  database:
+    alternates: true
+    alternates_base: Base
+
+
+application_server_paths:
+  #@classes: (__classes__)
+  #@datas: (__datas__)
+  #@functions: (__functions__)
+  @vendor: ~/vendor
+  #@setup: (__setup__)
+  #@system: (__system__)
+  @bin: ~/bin
+  @controllers: ~/app/controllers
+  @models: ~/app/models
+  @helpers: ~/app/helpers
+  @modules: ~/app/modules
+  @public: ~/public
+  @views: ~/app/views
+  @layouts: ~/app/views/layouts
+  @config: ~/config
+  @routes: ~/config/routes
+  @db: ~/db
+  @migrations: ~/db/migrations
+  @seeders: ~/db/seeders
+  @factory: ~/db/factory
+  @log: ~/log

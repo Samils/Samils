@@ -1,0 +1,69 @@
+# Alternates for database connection
+# it determinates if there're more
+# than a possible database to make
+# connection with the current application
+# It's a boolean value saying yes (true) or
+# no (false) acording to the application purpose
+# in order avoiding several memory use inside of
+# small and simple ils application, and so, providing
+# a more flexibility about how to find the application datas
+alternates: true
+
+defaults:
+  adapter: mysql
+  host: <?= ENV['MYSQL_HOST'] ?>
+  port: 80
+  charset: utf8
+  user: <?= ENV['MYSQL_USER'] ?>
+  pass: null
+
+  # Timeout per synchronization for
+  # each database used inside the current
+  # application. This option is uesless is
+  # 'alternates' is declared as false
+  # This is a number in miliseconds by default
+  # wish may be set with another unity putting
+  # it at the end of the number as: '10s' or 0.6h
+  #timeout_per_sync: 24h
+
+development:
+  db: Samils2_development_db
+  pass: mundomaluco
+  port: 4059
+
+  - alternate: SomeWrongDatas
+    pass: null
+    port: 8090
+  - alternate: SomeRightDatas2
+    pass: <?= ENV['MYSQL_PASS'] ?>
+    port: 3306
+
+test:
+  db: Samils_test_db
+  timeout_per_sync: 10m
+
+production:
+  user: <?= ENV['STONE_USER'] ?>
+  pass: <?= ENV['STONE_PASS'] ?>
+  db:   <?= ENV['STONE_DATABASE'] ?>
+
+  - alternate:
+    adapter: mysql
+    host: <?= ENV['MYSQL_HOST'] ?>
+    user: <?= ENV['MYSQL_USER'] ?>
+    pass: <?= ENV['MYSQL_PASS'] ?>
+
+    - alternate:
+      host: <?= ENV['MYSQL_HEROKU_HOST'] ?>
+    - alternate:
+      host: <?= ENV['MYSQL_CLOUD9_HOST'] ?>
+
+  - alternate:
+    adapter: pg
+    host: <?= ENV['PG_HOST'] ?>
+
+    - alternate:
+      host: <?= ENV['PG_HEROKU_HOST'] ?>
+    - alternate:
+      host: <?= ENV['PG_CLOUD9_HOST'] ?>
+

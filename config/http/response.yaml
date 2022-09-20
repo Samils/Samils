@@ -1,0 +1,15 @@
+# HTTP Response Base
+
+end_messages:
+  404: Page not found
+
+  default:
+    @json:
+      message: No Response
+  # In case of internal error
+  500: Internal server error
+headers:
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: POST
+  Access-Control-Allow-Methods: GET
+  Access-Control-Allow-Credentials: false

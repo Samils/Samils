@@ -1,0 +1,40 @@
+@import ApplicationMetaDatas from 'capsule'
+@import Styles from 'capsule'
+@import Scripts from 'capsule'
+
+@import Style from 'capsule'
+
+@import { CapsuleThemeProvider } from 'capsule'
+
+@def Application ({ $data, $children })
+  <html lang="pt-BR">
+    <head>
+     <title>App Test</title>
+     // mansmmsnd
+     // annsm
+     /**
+      * Application Metadatas
+      * - To edit this datas open your
+      * - metadatas inside the
+      * - 'app/assets/meta' directory
+      */
+     <ApplicationMetaDatas />
+
+     <Style href="styles.css" />
+     /**
+      * Import Styles And Scripts
+      */
+     <Scripts />
+     <Styles />
+    </head>
+    <body bgcolor="red" data-element="body" ng-controller="AppController" ng-module="App">
+      <CapsuleThemeProvider>
+        <div class="container">
+          <Yield data=%{ $data } />
+        </div>
+      </CapsuleThemeProvider>
+    </body>
+  </html>
+@end
+
+@export default Application

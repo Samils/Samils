@@ -1,0 +1,13 @@
+@import { Image } from 'capsule'
+
+@def Myapi
+  <Fragment>
+    <h1>Myapi</h1>
+
+    @for $num in range(1, 100)
+      <Image src="/foto/index.jpg" />
+    @end
+  </Fragment>
+@end
+
+@export default Myapi

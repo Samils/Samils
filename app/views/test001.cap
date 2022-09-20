@@ -1,0 +1,22 @@
+@def User ({ $name, $email })
+  <div>
+    <strong>Nome: %{ $name }</strong>
+    <br />
+    <span>Email: %{ $email }</span>
+  </div>
+@end
+
+@def App
+  <div>
+    <h1>Hello, World :)</h1>
+
+    @for $users as $user
+      <User 
+        name=%{ $user[:name] } 
+        email=%{ $user[:email] } 
+        />
+    @end
+
+  </div>
+@end
+

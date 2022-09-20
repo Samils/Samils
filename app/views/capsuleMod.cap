@@ -1,0 +1,45 @@
+/**
+@def Styles
+@end
+
+@def Scripts
+@end
+
+@def Style $href
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href=%{ (defined('Configure::ApplicationAssetesPath') ? Conf::ApplicationAssetesPath : '') . '/stylesheet/' . preg_replace ('/^\/+/', '', $href) }
+    crossorigin="annonimous"
+    />
+@end
+
+@def Script $src
+  <script
+    src=%{ (defined('Configure::ApplicationAssetesPath') ? Conf::ApplicationAssetesPath : '') . '/javascript/' . preg_replace ('/^\/+/', '', $src) }
+    type="text/javascript"
+    crossorigin="annonimous"
+    />
+@end
+*/
+
+@def App
+  <Fragment>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+
+    @each $appMetaDatas
+      <Fragment>
+        @if isset ($name) && is_int ($name)
+          <meta/>
+        @else
+          <meta
+            name=%{ $name }
+            content=%{ is_array ($content) ? join(',', $content) : $content }
+            />
+        @end
+      </Fragment>
+    @end
+  </Fragment>
+@end

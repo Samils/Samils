@@ -1,0 +1,20 @@
+FlatButton[type="primary"] {
+  background-color: #00bfff;
+  color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  span {
+    font-size: 15px;
+  }
+
+  &:hover {
+    background-color: #1eaddd;
+  }
+}

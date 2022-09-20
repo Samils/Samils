@@ -1,0 +1,36 @@
+# ils application cli
+# these are the general
+# configurations for the
+# application cli, be sure
+# about what doing when editing
+# this file.
+application-cli: sami/cli
+
+application-cli-arguments:
+  - mundo
+
+creators:
+  controller: php samils generate controller {0} {...}
+
+generators:
+  # ORM Generators
+  model:
+    - php samils base generate model { 0 | singular | lower | ucfirst }
+    - php samils base generate migration create_{ 0 | plural | lower} {...}
+    - php samils base generate seeder { 0 | singular | lower | ucfirst } {...}
+    - php samils base generate factory { 0 | singular | lower | ucfirst } {...}
+  migration: php samils base generate migration {...}
+  seeder: php samils base generate seeder { 0 | singular | lower | ucfirst } {...}
+  factory: php samils base generate factory { 0 | singular | lower | ucfirst } {...}
+
+  scaffold:
+    - php samils generate controller {0 | lower | plural }
+    - php samils generate model {0 | lower | singular} {...}
+    - php samils generate helper {0 | lower | plural }
+
+  view: php samils capsule generate:component {...}
+
+  # end
+
+  # View Engine Generators
+  # end

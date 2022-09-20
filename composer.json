@@ -1,0 +1,28 @@
+{
+  "name": "samils/samils",
+  "version": "1.0.0",
+  "description": "samils",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "homepage": "https://github.com/samils/samils",
+  "authors": [
+    {
+      "name": "Agostinho Lopes",
+      "email": "agostinhosaml832@gmail.com",
+      "homepage": "https://agostinhosamil.github.io",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.20",
+    "php_modules/core": "dev-main",
+    "php_modules/sami": "dev-main"
+  },
+  "require-dev": {
+    "php_modules/samils-devpacks": "dev-main"
+  },
+  "bin": [
+    "bin/bash"
+  ]
+}

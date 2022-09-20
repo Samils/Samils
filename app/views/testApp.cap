@@ -1,0 +1,59 @@
+@import { * } as Capsule, { Fragment, Button } as M from 'capsule'
+
+@def MyComponent
+  <div>
+    <title>CompamyName | %{ $title } | @2021</title>
+    <Text>Hello</Text>
+
+    <body>
+      %{ $name }
+    </body>
+  </div>
+@end
+
+
+@def App ({ $title })
+  <div>
+
+    <Fragment>
+      @if empty ($title)
+        <h1>
+          <Text>Bad Title</Text>
+        </h1>
+      @elsif $title === :mundo_money
+        <h1>Mundo Money</h1>
+      @else
+        <h1>Good Title</h1>
+      @end
+
+      <p>Read the text Above</p>
+    </Fragment>
+
+    @each $users
+      <div>%{ $name }</div>
+    @end
+
+    <content>
+      <p>Content Here</p>
+
+      @for $i = 0; $i < count ($this->users); $i++
+        <h1>User Name => %{ $userName }</h1>
+      @end
+
+      <p>End Of The user List</p>
+    </content>
+  </div>
+@end
+
+@export default do ($title, { name: $userName, list: $userList })
+  @render App $title
+@end
+
+@def Mundo ($name)
+@end
+
+@def App
+  <div>
+    %{ $this->users[0]->name }
+  </div>
+@end

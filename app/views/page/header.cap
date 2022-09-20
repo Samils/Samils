@@ -1,0 +1,16 @@
+@export Header do ($title)
+   <header class="header header-container" id="header">
+      <h3 class="i">%{ $title }</h1>
+      <p>
+        I am Sam
+
+        <span>Yayay</span>
+
+        <i class="fa fa-phone" />
+      </p>
+
+      <button>
+        <Text>Click Me</Text>
+      </button>
+   </header>
+@end

@@ -1,0 +1,19 @@
+strict: true
+static: true
+
+staticPaths:
+  yaya
+
+outDir: <?= path('~/public/build') ?>
+
+revalidate:
+  - value: true
+  - fallback: true
+    timeout: 19s
+    # s => segundo
+    # min => minutos
+    # h => horas
+    # d => dias
+    # m => meses
+    # y => anos
+    # sec => seculos

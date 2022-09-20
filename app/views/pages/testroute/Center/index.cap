@@ -1,0 +1,9 @@
+@import $styles from './styles'
+
+@def Center
+  <span style=%{$styles['text']}>
+    <Yield />
+  </span>
+@end
+
+@export Center

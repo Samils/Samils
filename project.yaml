@@ -1,0 +1,59 @@
+name: SamilsApp
+version: 1.0
+
+root:
+  # Application Folder
+  app:
+    controllers
+    middlewares
+    modules
+    helpers
+    models
+    views:
+      layouts
+
+  .sami:
+    ls:
+      # The Samils Folder containg whole the ils
+      # system and built-in classes that're used
+      # inside it to manage and bootstrap the
+      # current application
+      sml_datas
+      sml_system
+      sml_classes
+      sml_functions
+      # PHP File that bootstraps the application
+      # dependencies and auto includes the ils and
+      # application files inside the global scope
+      autoload
+      # PHP File that bootstraps the ils
+      # Application bootstrapper class
+      # [Sami]
+      sami
+  db:
+    migrations
+    scehma.php
+  config
+  log
+  lib
+  # Samils Configuration File
+  .config.php
+  # The environmet vars used by the current
+  # application and ils in order managing it
+  # as the current requirements for the ils
+  # version
+  .env
+
+  # File containg apache serverrules that're
+  # going to be used to match the application
+  # routes
+  .htaccess
+
+  # Application bootstrap file
+  index.php
+
+  # ils cli shortcut file
+  s
+  sml
+  samils
+  ReadMe.md

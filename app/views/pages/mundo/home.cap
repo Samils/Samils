@@ -1,0 +1,5 @@
+@def Home
+	<h1>home Component Works..!</h1>
+@end
+
+@export default Home

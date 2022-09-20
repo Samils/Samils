@@ -1,0 +1,31 @@
+
+@def CapsuleThemeProvider
+  <div class="user">
+    <div>
+      <yield />
+    </div>
+    <div>
+      <h4 style="color: #444444; font-size: 36px; font-family: 'Trebuchet MS'; font-weight: 100; padding: 24px .0px 10px">Name Here</h4>
+    </div>
+  </div>
+@end
+
+@def CapsuleThemeContainer
+  <yield />
+@end
+
+@def Theme
+  <div style="background: black">
+    <yield />
+  </div>
+@end
+
+@def Fragment
+  <yield />
+@end
+
+@def Button
+  <button>
+    <yield />
+  </button>
+@end

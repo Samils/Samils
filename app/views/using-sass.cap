@@ -1,0 +1,388 @@
+@import { Sass } from 'styles'
+
+@def SubTitle $text
+  <div>%{ $text }</div>
+@end
+
+@def App
+  <Sass>
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+    div
+      width: 300px
+      border: 1px solid white
+      h1
+        color: red
+        font-size: 15px
+      p
+        color: white
+        font-size: 8px
+
+        &:hover
+          color: white
+  </Sass>
+
+  <div>
+    <h1>My Title Here</h1>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+    <SubTitle text="My Subtitle here..!" />
+    <p>some great saying..!</p>
+  </div>
+@end
+
+@export default App

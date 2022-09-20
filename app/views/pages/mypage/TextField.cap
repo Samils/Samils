@@ -1,0 +1,21 @@
+@import $styles from './textFieldStyles'
+
+@def TextField ({ label: $text, ...$props })
+  ${ $for = 'TextField' . rand (001, 9999); }
+
+  <label for=%{ $for }
+    style=%{ $styles['label'] }>
+    %{ $text }
+  </label>
+
+  <input
+    spellcheck=%{ false }
+    autocomplete="off"
+    autocorrect="off"
+    style=%{ $styles['input'] }
+    type="text"
+    id=%{ $for }
+
+    %{ $props }
+    />
+@end

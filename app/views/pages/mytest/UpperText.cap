@@ -1,0 +1,40 @@
+@def UpperText $text
+  <Fragment>
+    <h1>Mun</h1>
+    <div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Agostinho Lopes</td>
+            </tr>
+            <tr>
+              <td>Samuel Lopes</td>
+            </tr>
+            <tr>
+              <td>António Fernando</td>
+            </tr>
+            <tr>
+              <td>Plamedi Ngoma</td>
+            </tr>
+          </tbody>
+        </table>
+        <Fragment>
+          <div>
+            @if true && 1 !== 5
+              <head>
+                <title>Upper Text</title>
+              </head>
+            @end
+          </div>
+        </Fragment>
+      </div>
+    </div>
+    %{ strtoupper ($text) }
+  </Fragment>
+@end

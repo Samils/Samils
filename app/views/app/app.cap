@@ -1,0 +1,111 @@
+@import User, UserForm
+
+@import { Image } from 'capsule'
+@import { Mock } from './Test/Mock'
+
+@import { CapsuleThemeProvider } from '../myThemeProvider'
+
+@def UserList $users
+  @each $user in $users
+    <User datas=%{ $user } />
+  @end
+@end
+
+@def App ($title, { data: $users })
+  <div data-user-list=%{ $users }>
+    <h1>%{ $title }</h1>
+    <yield />
+
+    <Mock />
+  </div>
+@end
+
+@def Text
+  <h4>
+    <yield />
+  </h4>
+@end
+
+@def Name $label
+  <span>
+    Name => %{ $label }
+  </span>
+@end
+
+@def Fragment
+  <yield />
+@end
+
+@def Test ({ text: $palavra, name: $nome })
+  <div class="user">
+    <h1>%{ $palavra }</h1>
+    <p>%{ $nome }</p>
+  </div>
+@end
+
+@export default do ({ data: $users })
+
+  <CapsuleThemeProvider>
+    <Image
+      width=%{ 300 }
+      src="photo.jpg"
+      data-href="/"
+      data-target-href="/images/"
+      imageCompressingRenderingSyinc=%{ true }
+      />
+  </CapsuleThemeProvider>
+
+  <Test text="Eu sou o Sam" name="Lopes" />
+  <Test text="Eu sou a Gerda" name="Gerda" />
+  <Test text="Eu sou o Zeldris" name="Zeldris" />
+  <Test text="Eu sou a Melrin" name="Melrin" />
+  <Test text="Eu sou o Chandler" name="Chandler" />
+
+  <ul>
+    @each $this->names
+      <li>%{ $name }</li>
+      <br />
+    @end
+  </ul>
+
+  <Fragment>
+    <UserForm />
+  </Fragment>
+
+  <App title="My App Title Here" data=%{ $users }>
+    <h1>Hello, App is working...</h1>
+  </App>
+
+  <Name label=%{ $this->myFullName } />
+
+  <ul data-ref=%{ $this->dataRef }>
+    @for $i = 0; $i < 10; $i++
+      <li>YAya</li>
+      <br />
+    @end
+  </ul>
+
+
+  <Text>
+    Hello, World..!
+
+    <br />
+
+    kkkkk
+  </Text>
+
+  <Fragment>
+    @if $users
+      <h1>Hello, More..!</h1>
+
+      <code contentEditable=%{ true }>
+        Hello
+      </code>
+
+
+      <UserList users=%{ $users } RoundCreation=%{ 5 } />
+    @else
+      <span>No users</span>
+    @end
+  </Fragment>
+

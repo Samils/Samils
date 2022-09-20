@@ -1,0 +1,13 @@
+uploaded_images:
+  default:
+    driver: fs
+    props:
+      name
+  development:
+    path: <?= path('~/app/assets/images/uploads') ?>
+  test:
+    path: <?= path('~/app/assets/images/uploads') ?>
+  production:
+    driver: httpart
+    props:
+      url: ''

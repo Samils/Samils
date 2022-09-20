@@ -1,0 +1,38 @@
+{
+  "watch": [
+    "@views",
+    "<appDir>/models"
+  ],
+
+  "watch.exclude": [
+    "@views/.dist",
+    "@views/.build"
+  ],
+
+  "dir.map": {
+    "log/idebugger": {
+      "log": "ils-dev-debugger"
+    }
+  },
+
+  "dir.watcher": [],
+
+  "file.watcher": [
+    "xsami-file-watcher",
+    {
+      "resolve": "capsule-css-file-dependency-watcher",
+      "options": {
+        "extensions": ["css", "ccss"],
+        "defaultFileProps": {
+          "dependencies": []
+        }
+      }
+    }
+  ],
+
+  "map": {
+    "cap": "gogue --respawn --minify=False",
+    "css": "gogue:ccss:compile --respawn --minify=False",
+    "php": "config-autoload"
+  }
+}

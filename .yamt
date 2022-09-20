@@ -1,0 +1,24 @@
+environment: php/samils
+
+command:
+  - run: samils
+
+application_environments:
+  production:
+    host: https://my-samils-website.dev
+
+    build:
+      run: ils build --strict=True --test
+
+    source_repo:
+      type: git
+      url: https://github.com/myuser/my-samils-website.git
+
+command_call:
+  - command: start
+    run:
+      - server
+      - xsami-dev-server --ignore-watch=vendor,app/assets/javascript/dist
+      - xsami-debug-server --debug=*
+  - command: create
+    run: generate

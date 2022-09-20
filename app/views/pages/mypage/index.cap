@@ -1,0 +1,35 @@
+@from 'capsule' import { Fragment }
+
+@import TextField from './TextField'
+
+@def MyPage
+  <Fragment>
+    <h1>Criar Conta</h1>
+    <form
+      style=%{[
+        :backgroundColor => '#ffffff',
+        :width => 500,
+        :padding => 40,
+        :border => '2px solid #cccccc',
+        :margin => 30
+      ]}
+      action="/"
+      method="post"
+      >
+      <TextField label="Seu nome" />
+      <TextField label="Seu email" />
+      <TextField label="Seu site" />
+      <TextField label="Seu terminal" />
+      <TextField label="Seu canal" />
+      <TextField label="Seu Grupo" />
+      <TextField label="Seu Sexo" />
+      <TextField label="Seu País" />
+      <TextField label="Seu Bairro" />
+      <TextField label="Seu Sobrenome" />
+      <TextField label="Seu Planeta" />
+      <TextField label="Seu Clube" />
+    </form>
+  </Fragment>
+@end
+
+@export default MyPage
