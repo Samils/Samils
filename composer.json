@@ -4,7 +4,6 @@
   "description": "samils",
   "type": "project",
   "license": "MIT",
-  "minimum-stability": "dev",
   "homepage": "https://github.com/samils/samils",
   "authors": [
     {
