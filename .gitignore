@@ -23,3 +23,5 @@ log/*/*
 # should now be used for production
 *.xphp
 *.php.lock
+
+composer.lock
