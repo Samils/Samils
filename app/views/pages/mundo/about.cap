@@ -1,5 +1,0 @@
-@def About
-	<h1>About Component Works..!</h1>
-@end
-
-@export default About

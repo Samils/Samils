@@ -1,5 +1,0 @@
-@def Home ($title, $children, ...$props, $mundo, ...$rest)
-  <Fragment>
-    <h1>Hello, World..!</h1>
-  </Fragment>
-@end

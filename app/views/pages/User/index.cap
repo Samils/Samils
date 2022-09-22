@@ -1,8 +1,0 @@
-@def User { datas: $user }
-  <div class="user">
-    <a href=%{ '/users/' . $user->id }>
-      <h1>%{ $user->name }</h1>
-    </a>
-    <span>%{ $user->email }</span>
-  </div>
-@end

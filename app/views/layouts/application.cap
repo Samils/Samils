@@ -27,7 +27,10 @@
      <Scripts />
      <Styles />
     </head>
-    <body bgcolor="red" data-element="body" ng-controller="AppController" ng-module="App">
+    <body bgcolor="red"
+      data-element="body"
+      ng-controller="AppController"
+      ng-module="App">
       <CapsuleThemeProvider>
         <div class="container">
           <Yield data=%{ $data } />

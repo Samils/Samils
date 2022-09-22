@@ -1,0 +1,3210 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "81526da78d952de86c8bed20463c281b",
+    "packages": [
+        {
+            "name": "php_modules/application-server",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-server.git",
+                "reference": "eb9d53a26fb2c1c8e75c05c12c42211b7feb344c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-server/zipball/eb9d53a26fb2c1c8e75c05c12c42211b7feb344c",
+                "reference": "eb9d53a26fb2c1c8e75c05c12c42211b7feb344c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/application-server-error-handler": "",
+                "php_modules/core": "",
+                "php_modules/format": "",
+                "php_modules/fs": "",
+                "php_modules/yaml-lite": "",
+                "samils/application-storage": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "src/server-live-configure"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package configurator for web applications",
+            "homepage": "https://github.com/samils/application-server",
+            "keywords": [
+                "application",
+                "application-server",
+                "config",
+                "configurator",
+                "package-config",
+                "samils",
+                "web"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/application-server/issues",
+                "source": "https://github.com/Samils/application-server/tree/main",
+                "wiki": "https://github.com/samils/application-server/wiki"
+            },
+            "time": "2022-09-18T23:02:59+00:00"
+        },
+        {
+            "name": "php_modules/application-server-error-handler",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-server-error-handler.git",
+                "reference": "b7f0e5cef29cb6f32cd97749151afc75adb3d663"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-server-error-handler/zipball/b7f0e5cef29cb6f32cd97749151afc75adb3d663",
+                "reference": "b7f0e5cef29cb6f32cd97749151afc75adb3d663",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/file-content-getter": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/handlers/error.php",
+                    "src/handlers/exception.php",
+                    "src/handlers/shutdown.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "Samils/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "Samils/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Error handler for Apsu",
+            "homepage": "https://github.com/samils/application-server-error-handler",
+            "keywords": [
+                "application",
+                "application-server-error-handler",
+                "config",
+                "configurator",
+                "package-config",
+                "samils",
+                "web"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/application-server-error-handler/issues",
+                "source": "https://github.com/Samils/application-server-error-handler/tree/main",
+                "wiki": "https://github.com/samils/application-server-error-handler/wiki"
+            },
+            "time": "2022-09-14T19:10:52+00:00"
+        },
+        {
+            "name": "php_modules/application-server-view-engine-manager",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-server-view-engine-manager.git",
+                "reference": "c936e982c8de81892caa6cd0b52fdba93787d786"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-server-view-engine-manager/zipball/c936e982c8de81892caa6cd0b52fdba93787d786",
+                "reference": "c936e982c8de81892caa6cd0b52fdba93787d786",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/application-server-error-handler": "",
+                "php_modules/core": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "application-server-view-engine-manager",
+            "homepage": "https://github.com/samils/application-server-view-engine-manager",
+            "keywords": [
+                "application",
+                "application-server",
+                "config",
+                "configurator",
+                "package-config",
+                "samils",
+                "web"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/application-server-view-engine-manager/issues",
+                "source": "https://github.com/Samils/application-server-view-engine-manager/tree/main",
+                "wiki": "https://github.com/samils/application-server-view-engine-manager/wiki"
+            },
+            "time": "2022-09-18T22:50:00+00:00"
+        },
+        {
+            "name": "php_modules/application-storage",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-storage.git",
+                "reference": "b91ff02db2a848173557368a5e013463bfbd3cf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-storage/zipball/b91ff02db2a848173557368a5e013463bfbd3cf7",
+                "reference": "b91ff02db2a848173557368a5e013463bfbd3cf7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "samils application storage class",
+            "homepage": "https://github.com/samils/application-storage",
+            "keywords": [
+                "application-storage",
+                "sami",
+                "samils",
+                "samils application-storage",
+                "samils local storage"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/agostinhosamil/application-storage/issues",
+                "source": "https://github.com/Samils/application-storage/tree/main",
+                "wiki": "https://github.com/agostinhosamil/application-storage/wiki"
+            },
+            "time": "2022-09-18T22:42:22+00:00"
+        },
+        {
+            "name": "php_modules/array-full-merge",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/array-full-merge.git",
+                "reference": "cf1497684fbe7d3ff3d07cb099cdfef6ee45a41b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/array-full-merge/zipball/cf1497684fbe7d3ff3d07cb099cdfef6ee45a41b",
+                "reference": "cf1497684fbe7d3ff3d07cb099cdfef6ee45a41b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/include-all": "dev-main",
+                "samils/callable-object": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "src/ArrayFullMerge"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A more complex way for merging array properties.",
+            "homepage": "https://github.com/agostinhosamil/array-full-merge",
+            "keywords": [
+                "array",
+                "array-full-merge",
+                "array-merge",
+                "full-merge",
+                "merge"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/agostinhosamil/array-full-merge/issues",
+                "source": "https://github.com/php-module/array-full-merge/tree/main",
+                "wiki": "https://github.com/agostinhosamil/array-full-merge/wiki"
+            },
+            "time": "2022-09-14T18:40:12+00:00"
+        },
+        {
+            "name": "php_modules/capsule",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/capsule.git",
+                "reference": "a6d26021194305346639833aa25f0670d6b1b6ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/capsule/zipball/a6d26021194305346639833aa25f0670d6b1b6ba",
+                "reference": "a6d26021194305346639833aa25f0670d6b1b6ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": "",
+                "php_modules/fs": "",
+                "php_modules/include-all": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "App\\": "App/",
+                    "Sammy\\": "Sammy/",
+                    "Capsule\\": "src/Capsule/"
+                },
+                "psr-4": {
+                    "App\\": "App/",
+                    "Sammy\\": "Sammy/",
+                    "Capsule\\": "src/Capsule/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "capsule view engine for Samils",
+            "homepage": "https://github.com/samils/capsule",
+            "keywords": [
+                "capsule",
+                "gogue"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/capsule/issues",
+                "source": "https://github.com/Samils/capsule/tree/main",
+                "wiki": "https://github.com/samils/capsule/wiki"
+            },
+            "time": "2022-09-18T23:54:36+00:00"
+        },
+        {
+            "name": "php_modules/core",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/php-module.git",
+                "reference": "a379eaa3e35131134ca184708d5b4e17668e7633"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/php-module/zipball/a379eaa3e35131134ca184708d5b4e17668e7633",
+                "reference": "a379eaa3e35131134ca184708d5b4e17668e7633",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "php\\": "php/",
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "php\\": "php/",
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A different way for modularising php scripts.",
+            "homepage": "https://github.com/php-modules/php-module",
+            "keywords": [
+                "Sammy",
+                "Sammy-Packs",
+                "modular",
+                "modular-php",
+                "module",
+                "module-php",
+                "modules",
+                "modules-php",
+                "packs",
+                "php",
+                "php-module",
+                "php-modules"
+            ],
+            "support": {
+                "email": "base.phpmodules@gmail.com",
+                "issues": "https://github.com/php-module/php-module/issues",
+                "source": "https://github.com/php-module/php-module/tree/main",
+                "wiki": "https://github.com/php-module/php-module/wiki"
+            },
+            "time": "2022-09-19T22:59:30+00:00"
+        },
+        {
+            "name": "php_modules/createfunction",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/createfunction.git",
+                "reference": "d582f7ebbc9ffbf73de54e23f8119b940282efed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/createfunction/zipball/d582f7ebbc9ffbf73de54e23f8119b940282efed",
+                "reference": "d582f7ebbc9ffbf73de54e23f8119b940282efed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dynamically Create php function",
+            "homepage": "https://github.com/php-module/createfunction",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/createfunction/issues",
+                "source": "https://github.com/php-module/createfunction/tree/main",
+                "wiki": "https://github.com/php-module/createfunction/wiki"
+            },
+            "time": "2022-09-14T19:54:31+00:00"
+        },
+        {
+            "name": "php_modules/dotenv",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/dotenv.git",
+                "reference": "f2a29558cba27c036f09c09d48553e0ce538cfa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/dotenv/zipball/f2a29558cba27c036f09c09d48553e0ce538cfa2",
+                "reference": "f2a29558cba27c036f09c09d48553e0ce538cfa2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/array-full-merge": "dev-main"
+            },
+            "suggest": {
+                "php_modules/core": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "src/ENV/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dotenv module for php.",
+            "homepage": "https://github.com/php-module/dotenv",
+            "keywords": [
+                ".env",
+                "dot-env",
+                "dotenv",
+                "environment",
+                "environment variables",
+                "variables"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/dotenv/issues",
+                "source": "https://github.com/Samils/dotenv/tree/main",
+                "wiki": "https://github.com/php-module/dotenv/wiki"
+            },
+            "time": "2022-09-18T19:12:00+00:00"
+        },
+        {
+            "name": "php_modules/file-content-getter",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/file-content-getter.git",
+                "reference": "008a765917886b35f0a9301c308c7f93598a5547"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/file-content-getter/zipball/008a765917886b35f0a9301c308c7f93598a5547",
+                "reference": "008a765917886b35f0a9301c308c7f93598a5547",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/array-full-merge": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "file-content-getter module for php.",
+            "homepage": "https://github.com/php-module/file-content-getter",
+            "keywords": [
+                "content getter",
+                "file content",
+                "file getter",
+                "file-content-getter"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/file-content-getter/issues",
+                "source": "https://github.com/Samils/file-content-getter/tree/main",
+                "wiki": "https://github.com/php-module/file-content-getter/wiki"
+            },
+            "time": "2022-09-14T16:48:54+00:00"
+        },
+        {
+            "name": "php_modules/format",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/format.git",
+                "reference": "9c5ae9468a1df63e00b4ce4078d8abd54a0ba6a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/format/zipball/9c5ae9468a1df63e00b4ce4078d8abd54a0ba6a4",
+                "reference": "9c5ae9468a1df63e00b4ce4078d8abd54a0ba6a4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP formatter for string interpolation.",
+            "homepage": "https://github.com/php-module/format",
+            "keywords": [
+                "format"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/format/issues",
+                "source": "https://github.com/php-module/format/tree/main",
+                "wiki": "https://github.com/php-module/format/wiki"
+            },
+            "time": "2022-09-19T23:11:09+00:00"
+        },
+        {
+            "name": "php_modules/fs",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/fs.git",
+                "reference": "e79f098585cad57d594a9b8a7a68218d816775b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/fs/zipball/e79f098585cad57d594a9b8a7a68218d816775b8",
+                "reference": "e79f098585cad57d594a9b8a7a68218d816775b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/include-all": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "FileSystem\\": "src/FileSystem/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "FileSystem\\": "src/FileSystem/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package configurator for web applications",
+            "homepage": "https://github.com/php-module/fs",
+            "keywords": [
+                "fs"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/fs/issues",
+                "source": "https://github.com/php-module/fs/tree/main",
+                "wiki": "https://github.com/php-module/fs/wiki"
+            },
+            "time": "2022-09-14T19:24:01+00:00"
+        },
+        {
+            "name": "php_modules/gogue-plugin-config-compiler",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-plugin-config-compiler.git",
+                "reference": "3f712256a0cb4c5027fe926942886265dbfa7775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-plugin-config-compiler/zipball/3f712256a0cb4c5027fe926942886265dbfa7775",
+                "reference": "3f712256a0cb4c5027fe926942886265dbfa7775",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "gogue-plugin-config-compiler",
+            "homepage": "https://github.com/samils/gogue-plugin-config-compiler",
+            "keywords": [
+                "component",
+                "config",
+                "config-compiler",
+                "gogue",
+                "gogue-config",
+                "gogue-config-compiler",
+                "gogue-plugin",
+                "gogue-plugin-config-compiler"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue-plugin-config-compiler/issues",
+                "source": "https://github.com/Samils/gogue-plugin-config-compiler/tree/main",
+                "wiki": "https://github.com/samils/gogue-plugin-config-compiler/wiki"
+            },
+            "time": "2022-09-19T23:18:01+00:00"
+        },
+        {
+            "name": "php_modules/http",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/http.git",
+                "reference": "ced34cfa05152a89a148f8b55d9abf702aa60948"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/http/zipball/ced34cfa05152a89a148f8b55d9abf702aa60948",
+                "reference": "ced34cfa05152a89a148f8b55d9abf702aa60948",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.5.x-dev"
+            },
+            "suggest": {
+                "php_modules/application-server-error-handler": "dev-main",
+                "php_modules/core": "dev-main",
+                "php_modules/format": "dev-main",
+                "php_modules/request-input": "dev-main",
+                "samils/callable-object": "dev-main",
+                "samils/klass-props": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "http adapter module for php.",
+            "homepage": "https://github.com/php-module/http",
+            "keywords": [
+                "http",
+                "http-adapter"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/http/issues",
+                "source": "https://github.com/php-module/http/tree/main",
+                "wiki": "https://github.com/php-module/http/wiki"
+            },
+            "time": "2022-09-18T21:51:47+00:00"
+        },
+        {
+            "name": "php_modules/include-all",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/include-all.git",
+                "reference": "581585ab9bdacef78678c3681894ca327e077368"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/include-all/zipball/581585ab9bdacef78678c3681894ca327e077368",
+                "reference": "581585ab9bdacef78678c3681894ca327e077368",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\Packs\\": "src/"
+                },
+                "psr-4": {
+                    "Sammy\\Packs\\": "src/"
+                },
+                "classmap": [
+                    "src/index.php",
+                    "src/Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A small and simple class to automatically include whole the directories and subdirectories files in php.",
+            "homepage": "https://github.com/php-modules/include-all",
+            "keywords": [
+                "autoload",
+                "bootstrap",
+                "directories",
+                "directory",
+                "include",
+                "include-all"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/include-all/issues",
+                "source": "https://github.com/php-module/include-all/tree/main",
+                "wiki": "https://github.com/php-module/include-all/wiki"
+            },
+            "time": "2022-09-19T23:14:07+00:00"
+        },
+        {
+            "name": "php_modules/kery",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/kery.git",
+                "reference": "75437b2c3d57f6dba6a4e5838472aa8520a2884f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/kery/zipball/75437b2c3d57f6dba6a4e5838472aa8520a2884f",
+                "reference": "75437b2c3d57f6dba6a4e5838472aa8520a2884f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A SQL query builder for php",
+            "homepage": "https://github.com/php-module/kery",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/kery/issues",
+                "source": "https://github.com/php-module/kery/tree/main",
+                "wiki": "https://github.com/php-module/kery/wiki"
+            },
+            "time": "2022-09-19T23:10:35+00:00"
+        },
+        {
+            "name": "php_modules/lorem-ipsum",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agostinhosamil/lorem-ipsum.git",
+                "reference": "ebd9d19b7d807ffb8a1374d9978a155a8499cf37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agostinhosamil/lorem-ipsum/zipball/ebd9d19b7d807ffb8a1374d9978a155a8499cf37",
+                "reference": "ebd9d19b7d807ffb8a1374d9978a155a8499cf37",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "lorem-ipsum module for php.",
+            "homepage": "https://github.com/php-module/lorem-ipsum",
+            "keywords": [
+                "lorem ipsum generator",
+                "lorem-ipsum"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/lorem-ipsum/issues",
+                "source": "https://github.com/agostinhosamil/lorem-ipsum/tree/main",
+                "wiki": "https://github.com/php-module/lorem-ipsum/wiki"
+            },
+            "time": "2022-09-18T19:27:29+00:00"
+        },
+        {
+            "name": "php_modules/mysql",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/mysql.git",
+                "reference": "5d287af50ca286f1263995ff599089182a2799a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/mysql/zipball/5d287af50ca286f1263995ff599089182a2799a5",
+                "reference": "5d287af50ca286f1263995ff599089182a2799a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": "dev-main",
+                "php_modules/format": "dev-main",
+                "php_modules/kery": "dev-main",
+                "samils/callable-object": "dev-main",
+                "samils/klass-props": "dev-main",
+                "samils/samils-component-saml": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "mysql adapter module for php.",
+            "homepage": "https://github.com/php-module/mysql",
+            "keywords": [
+                "adapter",
+                "database-driver",
+                "mysql",
+                "mysql-adapter",
+                "mysql-database-driver",
+                "mysql-driver"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/mysql/issues",
+                "source": "https://github.com/Samils/mysql/tree/main",
+                "wiki": "https://github.com/php-module/mysql/wiki"
+            },
+            "time": "2022-09-18T19:49:13+00:00"
+        },
+        {
+            "name": "php_modules/ncrypt",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/ncrypt.git",
+                "reference": "9105b38eb787aa520e4689fd47414712228455eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/ncrypt/zipball/9105b38eb787aa520e4689fd47414712228455eb",
+                "reference": "9105b38eb787aa520e4689fd47414712228455eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bcrypt based password hashing library.",
+            "homepage": "https://github.com/php-module/ncrypt",
+            "keywords": [
+                "ncrypt",
+                "php_modules",
+                "sami",
+                "tokens"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/ncrypt/issues",
+                "source": "https://github.com/php-module/ncrypt/tree/main",
+                "wiki": "https://github.com/php-module/ncrypt/wiki"
+            },
+            "time": "2022-09-19T23:08:27+00:00"
+        },
+        {
+            "name": "php_modules/path",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/path.git",
+                "reference": "0e5844690b3cff533b57aecbb29f0a6e3842ca17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/path/zipball/0e5844690b3cff533b57aecbb29f0a6e3842ca17",
+                "reference": "0e5844690b3cff533b57aecbb29f0a6e3842ca17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Path resolver",
+            "homepage": "https://github.com/php-module/path",
+            "keywords": [
+                "path"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/path/issues",
+                "source": "https://github.com/php-module/path/tree/main",
+                "wiki": "https://github.com/php-module/path/wiki"
+            },
+            "time": "2022-09-18T21:26:16+00:00"
+        },
+        {
+            "name": "php_modules/plural",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/plural.git",
+                "reference": "91e194874df4dc5855c69fc2349f2f6223adea7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/plural/zipball/91e194874df4dc5855c69fc2349f2f6223adea7e",
+                "reference": "91e194874df4dc5855c69fc2349f2f6223adea7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "pluralize a word.",
+            "homepage": "https://github.com/agostinhosamil/plural",
+            "keywords": [
+                "plural",
+                "plural-str",
+                "plural-string",
+                "plural-word",
+                "pluralize"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/agostinhosamil/plural/issues",
+                "source": "https://github.com/php-module/plural/tree/main",
+                "wiki": "https://github.com/agostinhosamil/plural/wiki"
+            },
+            "time": "2022-09-17T14:32:31+00:00"
+        },
+        {
+            "name": "php_modules/request-input",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/request-input.git",
+                "reference": "4e99f6b5a0f27f923abe2089e0bc041b734438ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/request-input/zipball/4e99f6b5a0f27f923abe2089e0bc041b734438ef",
+                "reference": "4e99f6b5a0f27f923abe2089e0bc041b734438ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "HTTP Request input/body parser for php rest API.",
+            "homepage": "https://github.com/samils/request-input",
+            "keywords": [
+                "body-parser",
+                "http",
+                "http-body",
+                "http-request-body",
+                "http-request-body-parser",
+                "http-request-input",
+                "http-request-input-parser",
+                "input",
+                "input-parser",
+                "request-body-parser",
+                "request-input-parser"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/request-input/issues",
+                "source": "https://github.com/Samils/request-input/tree/main",
+                "wiki": "https://github.com/samils/request-input/wiki"
+            },
+            "time": "2022-09-19T23:13:20+00:00"
+        },
+        {
+            "name": "php_modules/sami",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/sami.git",
+                "reference": "a13fef67a252ffe211b7e20256cd5016ec02ba1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/sami/zipball/a13fef67a252ffe211b7e20256cd5016ec02ba1d",
+                "reference": "a13fef67a252ffe211b7e20256cd5016ec02ba1d",
+                "shasum": ""
+            },
+            "require": {
+                "php_modules/application-server": "dev-main",
+                "php_modules/application-server-error-handler": "dev-main",
+                "php_modules/application-server-view-engine-manager": "dev-main",
+                "php_modules/application-storage": "dev-main",
+                "php_modules/array-full-merge": "dev-main",
+                "php_modules/capsule": "dev-main",
+                "php_modules/createfunction": "dev-main",
+                "php_modules/dotenv": "dev-main",
+                "php_modules/file-content-getter": "dev-main",
+                "php_modules/format": "dev-main",
+                "php_modules/fs": "dev-main",
+                "php_modules/gogue-plugin-config-compiler": "dev-main",
+                "php_modules/http": "dev-main",
+                "php_modules/include-all": "dev-main",
+                "php_modules/kery": "dev-main",
+                "php_modules/lorem-ipsum": "dev-main",
+                "php_modules/mysql": "dev-main",
+                "php_modules/ncrypt": "dev-main",
+                "php_modules/path": "dev-main",
+                "php_modules/plural": "dev-main",
+                "php_modules/request-input": "dev-main",
+                "php_modules/sami-tokens": "dev-main",
+                "php_modules/singular": "dev-main",
+                "php_modules/strarray": "dev-main",
+                "php_modules/trace-datas": "dev-main",
+                "php_modules/types-by-extension": "dev-main",
+                "php_modules/view-engine": "dev-main",
+                "php_modules/xm1rray": "dev-main",
+                "php_modules/yaml-lite": "dev-main",
+                "samils/application-bootstrapper": "dev-main",
+                "samils/application-config": "dev-main",
+                "samils/callable-object": "dev-main",
+                "samils/klass-props": "dev-main",
+                "samils/samils-component-functions": "dev-main",
+                "samils/samils-component-http-controllerset": "dev-main",
+                "samils/samils-component-saml": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "App\\": "src/",
+                    "Sami\\": "src/",
+                    "Sammy\\": "Sammy/",
+                    "Application\\": "src/"
+                },
+                "psr-4": {
+                    "App\\": "src/",
+                    "Sami\\": "src/",
+                    "Sammy\\": "Sammy/",
+                    "Application\\": "src/"
+                },
+                "classmap": [
+                    "src/middlewares",
+                    "src/modules"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Samils",
+            "homepage": "https://github.com/samils/sami",
+            "keywords": [
+                "sami",
+                "samils"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/sami/issues",
+                "source": "https://github.com/Samils/sami/tree/main",
+                "wiki": "https://github.com/samils/sami/wiki"
+            },
+            "time": "2022-09-19T15:20:45+00:00"
+        },
+        {
+            "name": "php_modules/sami-tokens",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/sami-tokens.git",
+                "reference": "934f544999d06e81a5fde1123f368452690e5bd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/sami-tokens/zipball/934f544999d06e81a5fde1123f368452690e5bd2",
+                "reference": "934f544999d06e81a5fde1123f368452690e5bd2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Random string/token generator",
+            "homepage": "https://github.com/php-module/sami-tokens",
+            "keywords": [
+                "php_modules",
+                "random string",
+                "random string generator",
+                "sami",
+                "sami-tokens",
+                "string generator",
+                "tokens"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/sami-tokens/issues",
+                "source": "https://github.com/php-module/sami-tokens/tree/main",
+                "wiki": "https://github.com/php-module/sami-tokens/wiki"
+            },
+            "time": "2022-09-19T23:09:46+00:00"
+        },
+        {
+            "name": "php_modules/singular",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/singular.git",
+                "reference": "ebbefae92b3a912f388ac91529d212ebeb7a08a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/singular/zipball/ebbefae92b3a912f388ac91529d212ebeb7a08a1",
+                "reference": "ebbefae92b3a912f388ac91529d212ebeb7a08a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Singularize a word.",
+            "homepage": "https://github.com/agostinhosamil/singular",
+            "keywords": [
+                "singular",
+                "singular-str",
+                "singular-string",
+                "singular-word",
+                "singularize"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/agostinhosamil/singular/issues",
+                "source": "https://github.com/php-module/singular/tree/main",
+                "wiki": "https://github.com/agostinhosamil/singular/wiki"
+            },
+            "time": "2022-09-17T15:27:00+00:00"
+        },
+        {
+            "name": "php_modules/strarray",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/strarray.git",
+                "reference": "1cef7ad239c447f2872112d9d074ef9be662bcda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/strarray/zipball/1cef7ad239c447f2872112d9d074ef9be662bcda",
+                "reference": "1cef7ad239c447f2872112d9d074ef9be662bcda",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/array-full-merge": "dev-main",
+                "php_modules/core": "dev-main",
+                "php_modules/fs": "dev-main",
+                "samils/callable-object": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "strarray module for php.",
+            "homepage": "https://github.com/php-module/strarray",
+            "keywords": [
+                "array-stream",
+                "strarray",
+                "stream-array",
+                "streamarray",
+                "strmarray"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/strarray/issues",
+                "source": "https://github.com/php-module/strarray/tree/main",
+                "wiki": "https://github.com/php-module/strarray/wiki"
+            },
+            "time": "2022-09-18T22:25:00+00:00"
+        },
+        {
+            "name": "php_modules/trace-datas",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/trace-datas.git",
+                "reference": "72734c2c8a0dee96fd01500b493e2264b5dcf456"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/trace-datas/zipball/72734c2c8a0dee96fd01500b493e2264b5dcf456",
+                "reference": "72734c2c8a0dee96fd01500b493e2264b5dcf456",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "trace-datas module for php.",
+            "homepage": "https://github.com/php-module/trace-datas",
+            "keywords": [
+                "trace-datas"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/trace-datas/issues",
+                "source": "https://github.com/php-module/trace-datas/tree/main",
+                "wiki": "https://github.com/php-module/trace-datas/wiki"
+            },
+            "time": "2022-09-18T22:02:52+00:00"
+        },
+        {
+            "name": "php_modules/types-by-extension",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/types-by-extension.git",
+                "reference": "14f6c7142477efd3ca7e463b2c11776a60745637"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/types-by-extension/zipball/14f6c7142477efd3ca7e463b2c11776a60745637",
+                "reference": "14f6c7142477efd3ca7e463b2c11776a60745637",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Get a file mimetype by the file extension",
+            "homepage": "https://github.com/php-module/types-by-extension",
+            "keywords": [
+                "types-by-extension"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/types-by-extension/issues",
+                "source": "https://github.com/php-module/types-by-extension/tree/main",
+                "wiki": "https://github.com/php-module/types-by-extension/wiki"
+            },
+            "time": "2022-09-18T13:46:50+00:00"
+        },
+        {
+            "name": "php_modules/view-engine",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/view-engine.git",
+                "reference": "e4e5ff492edea945feb8b748b581523e30e90ffc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/view-engine/zipball/e4e5ff492edea945feb8b748b581523e30e90ffc",
+                "reference": "e4e5ff492edea945feb8b748b581523e30e90ffc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/application-server-view-engine-manager": "dev-main",
+                "php_modules/array-full-merge": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "view-engine module for Samils.",
+            "homepage": "https://github.com/samils/view-engine",
+            "keywords": [
+                "view-engine"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/view-engine/issues",
+                "source": "https://github.com/Samils/view-engine/tree/main",
+                "wiki": "https://github.com/samils/view-engine/wiki"
+            },
+            "time": "2022-09-18T22:30:36+00:00"
+        },
+        {
+            "name": "php_modules/xm1rray",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/xm1rray.git",
+                "reference": "7e7f1ca58e4a450e4db262c909ab1a6ca96bd4eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/xm1rray/zipball/7e7f1ca58e4a450e4db262c909ab1a6ca96bd4eb",
+                "reference": "7e7f1ca58e4a450e4db262c909ab1a6ca96bd4eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "XM1RRAY - Convert any xml data to an array.",
+            "homepage": "https://github.com/samils/xm1rray",
+            "keywords": [
+                "xm1rray",
+                "xml",
+                "xml-array",
+                "xml-to-php",
+                "xmlarray",
+                "xmltophp"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/xm1rray/issues",
+                "source": "https://github.com/Samils/xm1rray/tree/main",
+                "wiki": "https://github.com/samils/xm1rray/wiki"
+            },
+            "time": "2022-09-18T11:50:25+00:00"
+        },
+        {
+            "name": "php_modules/yaml-lite",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/yaml-lite.git",
+                "reference": "d85d68d54f4cef4f56d44d20f13e5ea61bf7f730"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/yaml-lite/zipball/d85d68d54f4cef4f56d44d20f13e5ea61bf7f730",
+                "reference": "d85d68d54f4cef4f56d44d20f13e5ea61bf7f730",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\Packs\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\Packs\\": "Sammy/"
+                },
+                "classmap": [
+                    "core/",
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A pretty way for parsing yaml datas.",
+            "homepage": "https://github.com/php-modules/yaml-lite",
+            "keywords": [
+                "lite-yaml-parser",
+                "parse",
+                "parse-yaml",
+                "parse-yaml-file",
+                "parser",
+                "pretty-yaml-parser",
+                "read-yaml-data",
+                "yaml",
+                "yaml-file-loader",
+                "yaml-lite",
+                "yaml-lite-parser",
+                "yaml-loader",
+                "yaml-parse",
+                "yaml-parser"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/yaml-lite/issues",
+                "source": "https://github.com/php-module/yaml-lite/tree/main",
+                "wiki": "https://github.com/php-module/yaml-lite/wiki"
+            },
+            "time": "2022-09-19T23:12:53+00:00"
+        },
+        {
+            "name": "samils/application-bootstrapper",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-bootstrapper.git",
+                "reference": "2a834884f2294c54d48fa49af94dca61f7f10104"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-bootstrapper/zipball/2a834884f2294c54d48fa49af94dca61f7f10104",
+                "reference": "2a834884f2294c54d48fa49af94dca61f7f10104",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "Samils/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "Samils/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SAML",
+            "homepage": "https://github.com/samils/application-bootstrapper",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/application-bootstrapper/issues",
+                "source": "https://github.com/Samils/application-bootstrapper/tree/main",
+                "wiki": "https://github.com/samils/application-bootstrapper/wiki"
+            },
+            "time": "2022-09-18T09:22:04+00:00"
+        },
+        {
+            "name": "samils/application-config",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/application-config.git",
+                "reference": "2ca6e6613281e886cc59fe5c838e78de94adfab7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/application-config/zipball/2ca6e6613281e886cc59fe5c838e78de94adfab7",
+                "reference": "2ca6e6613281e886cc59fe5c838e78de94adfab7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/array-full-merge": "dev-main",
+                "php_modules/gogue-plugin-config-compiler": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers/def.php",
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "src/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "Samils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A set of Samils helpers",
+            "homepage": "https://github.com/samils/application-config",
+            "keywords": [
+                "samils"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/application-config/issues",
+                "source": "https://github.com/Samils/application-config/tree/main",
+                "wiki": "https://github.com/samils/application-config/wiki"
+            },
+            "time": "2022-09-14T16:01:15+00:00"
+        },
+        {
+            "name": "samils/callable-object",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/callable-object.git",
+                "reference": "8af341622c593b056b45184369d9e73c675c5f4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/callable-object/zipball/8af341622c593b056b45184369d9e73c675c5f4d",
+                "reference": "8af341622c593b056b45184369d9e73c675c5f4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Samils callable-object",
+            "homepage": "https://github.com/samils/callable-object",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/callable-object/issues",
+                "source": "https://github.com/Samils/callable-object/tree/main",
+                "wiki": "https://github.com/samils/callable-object/wiki"
+            },
+            "time": "2022-09-14T14:36:40+00:00"
+        },
+        {
+            "name": "samils/klass-props",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/klass-props.git",
+                "reference": "c4c65e8914b0a9ba9382f9aaf451715e74b05440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/klass-props/zipball/c4c65e8914b0a9ba9382f9aaf451715e74b05440",
+                "reference": "c4c65e8914b0a9ba9382f9aaf451715e74b05440",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "Application\\Klass\\": "Application/Klass/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "Application\\Klass\\": "Application/Klass/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SAML",
+            "homepage": "https://github.com/samils/klass-props",
+            "keywords": [
+                "class properties",
+                "class props",
+                "klass"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/klass-props/issues",
+                "source": "https://github.com/Samils/klass-props/tree/main",
+                "wiki": "https://github.com/samils/klass-props/wiki"
+            },
+            "time": "2022-09-20T06:49:34+00:00"
+        },
+        {
+            "name": "samils/samils-component-functions",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/samils-component-functions.git",
+                "reference": "4f5bf8c8a2c83ef5ae5d7b0e23257cff3473933d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/samils-component-functions/zipball/4f5bf8c8a2c83ef5ae5d7b0e23257cff3473933d",
+                "reference": "4f5bf8c8a2c83ef5ae5d7b0e23257cff3473933d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/request-input": "dev-main",
+                "samils/callable-object": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/index.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A set of Samils helpers",
+            "homepage": "https://github.com/samils/samils-component-functions",
+            "keywords": [
+                "ils-functions",
+                "samils",
+                "samils helpers",
+                "samils-fn"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/samils-component-functions/issues",
+                "source": "https://github.com/Samils/samils-component-functions/tree/main",
+                "wiki": "https://github.com/samils/samils-component-functions/wiki"
+            },
+            "time": "2022-09-14T14:27:59+00:00"
+        },
+        {
+            "name": "samils/samils-component-http-controllerset",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/samils-component-http-controllerset.git",
+                "reference": "805de4d15821369f6ad456ee2f5099dff42df498"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/samils-component-http-controllerset/zipball/805de4d15821369f6ad456ee2f5099dff42df498",
+                "reference": "805de4d15821369f6ad456ee2f5099dff42df498",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/",
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "samils-component-http-controllerset",
+            "homepage": "https://github.com/samils/samils-component-http-controllerset",
+            "keywords": [
+                "base-controller",
+                "base-controller-library",
+                "base-controllerset-library",
+                "basecontroller",
+                "controller",
+                "controller-component",
+                "controllercomponent",
+                "controllerset",
+                "controllersetcomponent",
+                "http-controller",
+                "http-controlsetlerset",
+                "httpcontroller",
+                "httpcontrollerset",
+                "samils",
+                "samils-base-controller",
+                "samils-basecontroller",
+                "samils-component",
+                "samils-component-http-controller",
+                "samils-component-http-controllerset",
+                "samilsbasecontroller",
+                "samilscontroller",
+                "samilscontrollerset",
+                "set"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/samils-component-http-controllerset/issues",
+                "source": "https://github.com/Samils/samils-component-http-controllerset/tree/main",
+                "wiki": "https://github.com/samils/samils-component-http-controllerset/wiki"
+            },
+            "time": "2022-09-18T09:37:51+00:00"
+        },
+        {
+            "name": "samils/samils-component-saml",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/samils-component-saml.git",
+                "reference": "c62cb14efd80c08e87a11489173843504893740b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/samils-component-saml/zipball/c62cb14efd80c08e87a11489173843504893740b",
+                "reference": "c62cb14efd80c08e87a11489173843504893740b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/file-content-getter": "",
+                "php_modules/format": "",
+                "php_modules/fs": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SAML",
+            "homepage": "https://github.com/samils/samils-component-saml",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/samils-component-saml/issues",
+                "source": "https://github.com/Samils/samils-component-saml/tree/main",
+                "wiki": "https://github.com/samils/samils-component-saml/wiki"
+            },
+            "time": "2022-09-18T18:54:10+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "php_modules/capsule-css-file-dependency-watcher",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/capsule-css-file-dependency-watcher.git",
+                "reference": "e9153046a9d042342782f97f7976e3b0c6a0346b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/capsule-css-file-dependency-watcher/zipball/e9153046a9d042342782f97f7976e3b0c6a0346b",
+                "reference": "e9153046a9d042342782f97f7976e3b0c6a0346b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": "",
+                "php_modules/fs": "",
+                "php_modules/gogue-plugin-capsule-css-parser": "",
+                "php_modules/xsami": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "capsule-css-file-dependency-watcher",
+            "homepage": "https://github.com/samils/capsule-css-file-dependency-watcher",
+            "keywords": [
+                "capsule-css-file-dependency-watcher"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/capsule-css-file-dependency-watcher/issues",
+                "source": "https://github.com/Samils/capsule-css-file-dependency-watcher/tree/main",
+                "wiki": "https://github.com/samils/capsule-css-file-dependency-watcher/wiki"
+            },
+            "time": "2022-09-19T07:08:02+00:00"
+        },
+        {
+            "name": "php_modules/command-line-interface",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/command-line-interface.git",
+                "reference": "55954a6d1d42d1996026936ddaa3e2b2bea0cfd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/command-line-interface/zipball/55954a6d1d42d1996026936ddaa3e2b2bea0cfd4",
+                "reference": "55954a6d1d42d1996026936ddaa3e2b2bea0cfd4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/array-full-merge": "",
+                "php_modules/yaml-lite": "",
+                "samils/callable-object": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/",
+                    "Clinter\\": "Clinter/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/",
+                    "Clinter\\": "Clinter/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "command-line-interface module for php.",
+            "homepage": "https://github.com/samils/command-line-interface",
+            "keywords": [
+                "Samils CLI",
+                "Samils Command Line Interface",
+                "cli",
+                "command-line-interface",
+                "commandlineinterface",
+                "ils-cli",
+                "samils-cli",
+                "samils-command-line-interface",
+                "samilscommandlineinterface"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/command-line-interface/issues",
+                "source": "https://github.com/php-module/command-line-interface/tree/main",
+                "wiki": "https://github.com/samils/command-line-interface/wiki"
+            },
+            "time": "2022-09-19T13:28:49+00:00"
+        },
+        {
+            "name": "php_modules/gogue",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue.git",
+                "reference": "4f85c01e3e6d08d56818102a4a0823b734813438"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue/zipball/4f85c01e3e6d08d56818102a4a0823b734813438",
+                "reference": "4f85c01e3e6d08d56818102a4a0823b734813438",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "samils/samils-component-saml": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "gogue module for php.",
+            "homepage": "https://github.com/samils/gogue",
+            "keywords": [
+                "gogue"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue/issues",
+                "source": "https://github.com/Samils/gogue/tree/main",
+                "wiki": "https://github.com/samils/gogue/wiki"
+            },
+            "time": "2022-09-19T12:39:32+00:00"
+        },
+        {
+            "name": "php_modules/gogue-component-base",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-component-base.git",
+                "reference": "ad0dfa16b81765bc57646179d168b0edc4200a1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-component-base/zipball/ad0dfa16b81765bc57646179d168b0edc4200a1b",
+                "reference": "ad0dfa16b81765bc57646179d168b0edc4200a1b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "gogue-component-base",
+            "homepage": "https://github.com/samils/gogue-component-base",
+            "keywords": [
+                "component",
+                "gogue",
+                "gogue-component",
+                "gogue-component-base"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue-component-base/issues",
+                "source": "https://github.com/Samils/gogue-component-base/tree/main",
+                "wiki": "https://github.com/samils/gogue-component-base/wiki"
+            },
+            "time": "2022-09-19T23:19:41+00:00"
+        },
+        {
+            "name": "php_modules/gogue-component-config",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-component-config.git",
+                "reference": "cde76dcbb9554d7fc1048f3387a0b6855bc79432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-component-config/zipball/cde76dcbb9554d7fc1048f3387a0b6855bc79432",
+                "reference": "cde76dcbb9554d7fc1048f3387a0b6855bc79432",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "gogue-component-config",
+            "homepage": "https://github.com/samils/gogue-component-config",
+            "keywords": [
+                "component",
+                "gogue",
+                "gogue-component",
+                "gogue-component-config"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue-component-config/issues",
+                "source": "https://github.com/Samils/gogue-component-config/tree/main",
+                "wiki": "https://github.com/samils/gogue-component-config/wiki"
+            },
+            "time": "2022-09-19T23:18:44+00:00"
+        },
+        {
+            "name": "php_modules/gogue-component-transpiler",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-component-transpiler.git",
+                "reference": "f7ee66954d94bc734c1d05b4b022a59c34dfcdca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-component-transpiler/zipball/f7ee66954d94bc734c1d05b4b022a59c34dfcdca",
+                "reference": "f7ee66954d94bc734c1d05b4b022a59c34dfcdca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "gogue-component-transpiler",
+            "homepage": "https://github.com/samils/gogue-component-transpiler",
+            "keywords": [
+                "component",
+                "gogue",
+                "gogue-component",
+                "gogue-component-transpiler"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue-component-transpiler/issues",
+                "source": "https://github.com/Samils/gogue-component-transpiler/tree/main",
+                "wiki": "https://github.com/samils/gogue-component-transpiler/wiki"
+            },
+            "time": "2022-09-19T23:14:58+00:00"
+        },
+        {
+            "name": "php_modules/gogue-plugin-capsule",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-plugin-capsule.git",
+                "reference": "a0fd81b50026a22cf0c23557562f64d3bbbb669f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-plugin-capsule/zipball/a0fd81b50026a22cf0c23557562f64d3bbbb669f",
+                "reference": "a0fd81b50026a22cf0c23557562f64d3bbbb669f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "XML Parser for capsule gogue plugin",
+            "homepage": "https://github.com/samils/gogue-plugin-capsule",
+            "keywords": [
+                "capsule",
+                "capsule-xml",
+                "capsule-xml-parser",
+                "gogue",
+                "gogue-component",
+                "gogue-component-transpiler",
+                "gogue-plugin-capsule",
+                "gogue-plugin-capsule-xml-parser",
+                "plugin",
+                "xml-parser"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/gogue-plugin-capsule/issues",
+                "source": "https://github.com/Samils/gogue-plugin-capsule/tree/main",
+                "wiki": "https://github.com/samils/gogue-plugin-capsule/wiki"
+            },
+            "time": "2022-09-19T23:38:53+00:00"
+        },
+        {
+            "name": "php_modules/gogue-plugin-capsule-css-parser",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-plugin-capsule-css-parser.git",
+                "reference": "16007a71063ec111e04c158f42751f3aa64bc9bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-plugin-capsule-css-parser/zipball/16007a71063ec111e04c158f42751f3aa64bc9bc",
+                "reference": "16007a71063ec111e04c158f42751f3aa64bc9bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": "",
+                "php_modules/gogue-component-base": "",
+                "php_modules/gogue-component-config": "",
+                "php_modules/gogue-component-transpiler": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Gogue\\": "Gogue/",
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Gogue\\": "Gogue/",
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/",
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "css Parser for capsule gogue plugin",
+            "homepage": "https://github.com/php-modules/gogue-plugin-capsule-css-parser",
+            "keywords": [
+                "capsule",
+                "capsule-css",
+                "capsule-css-parser",
+                "css-parser",
+                "gogue",
+                "gogue-plugin",
+                "gogue-plugin-capsule",
+                "gogue-plugin-capsule-css-parser",
+                "gogue-plugin-parser",
+                "plugin"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/gogue-plugin-capsule-css-parser/issues",
+                "source": "https://github.com/Samils/gogue-plugin-capsule-css-parser/tree/main",
+                "wiki": "https://github.com/php-module/gogue-plugin-capsule-css-parser/wiki"
+            },
+            "time": "2022-09-19T08:34:27+00:00"
+        },
+        {
+            "name": "php_modules/gogue-plugin-capsule-xml-parser",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/gogue-plugin-capsule-xml-parser.git",
+                "reference": "a1ae9591acebc9ee4fca000e5aa33ae043fcf279"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/gogue-plugin-capsule-xml-parser/zipball/a1ae9591acebc9ee4fca000e5aa33ae043fcf279",
+                "reference": "a1ae9591acebc9ee4fca000e5aa33ae043fcf279",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Gogue\\": "Gogue/",
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Gogue\\": "Gogue/",
+                    "Sammy\\": "Sammy/"
+                },
+                "classmap": [
+                    "Sammy/",
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "XML Parser for capsule gogue plugin",
+            "homepage": "https://github.com/php-modules/include-all",
+            "keywords": [
+                "capsule",
+                "capsule-xml",
+                "capsule-xml-parser",
+                "gogue",
+                "gogue-plugin",
+                "gogue-plugin-capsule",
+                "gogue-plugin-capsule-xml-parser",
+                "gogue-plugin-parser",
+                "plugin",
+                "xml-parser"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/include-all/issues",
+                "source": "https://github.com/Samils/gogue-plugin-capsule-xml-parser/tree/main",
+                "wiki": "https://github.com/php-module/include-all/wiki"
+            },
+            "time": "2022-09-19T23:17:32+00:00"
+        },
+        {
+            "name": "php_modules/ipconfig",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-module/ipconfig.git",
+                "reference": "2a653e35a0cd223898132bc4b1c9f002448c71b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-module/ipconfig/zipball/2a653e35a0cd223898132bc4b1c9f002448c71b0",
+                "reference": "2a653e35a0cd223898132bc4b1c9f002448c71b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/array-full-merge": "dev-main",
+                "php_modules/core": "dev-main",
+                "samils/callable-object": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ipconfig module for php.",
+            "homepage": "https://github.com/php-module/ipconfig",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/ipconfig/issues",
+                "source": "https://github.com/php-module/ipconfig/tree/main",
+                "wiki": "https://github.com/php-module/ipconfig/wiki"
+            },
+            "time": "2022-09-19T06:40:58+00:00"
+        },
+        {
+            "name": "php_modules/samils-cli-sbr-commands",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/samils-cli-sbr-commands.git",
+                "reference": "fbe13d553bbafa8a49a65e230793e5cffb2d19e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/samils-cli-sbr-commands/zipball/fbe13d553bbafa8a49a65e230793e5cffb2d19e3",
+                "reference": "fbe13d553bbafa8a49a65e230793e5cffb2d19e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Samils CLI Plugin for SBR",
+            "homepage": "https://github.com/php-module/samils-cli-sbr-commands",
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/php-module/samils-cli-sbr-commands/issues",
+                "source": "https://github.com/Samils/samils-cli-sbr-commands/tree/main",
+                "wiki": "https://github.com/php-module/samils-cli-sbr-commands/wiki"
+            },
+            "time": "2022-09-19T08:48:00+00:00"
+        },
+        {
+            "name": "php_modules/samils-devpacks",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/samils-devpacks.git",
+                "reference": "24b0aafd9e41ccc244c71fdad691196f3e1f20fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/samils-devpacks/zipball/24b0aafd9e41ccc244c71fdad691196f3e1f20fe",
+                "reference": "24b0aafd9e41ccc244c71fdad691196f3e1f20fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20",
+                "php_modules/capsule-css-file-dependency-watcher": "dev-main",
+                "php_modules/command-line-interface": "dev-main",
+                "php_modules/gogue": "dev-main",
+                "php_modules/gogue-component-base": "dev-main",
+                "php_modules/gogue-component-config": "dev-main",
+                "php_modules/gogue-component-transpiler": "dev-main",
+                "php_modules/gogue-plugin-capsule": "dev-main",
+                "php_modules/gogue-plugin-capsule-css-parser": "dev-main",
+                "php_modules/gogue-plugin-capsule-xml-parser": "dev-main",
+                "php_modules/ipconfig": "dev-main",
+                "php_modules/samils-cli-sbr-commands": "dev-main",
+                "php_modules/xsami": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Development package set for Samils",
+            "homepage": "https://github.com/samils/samils-devpacks",
+            "keywords": [
+                "gogue",
+                "samils"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/samils-devpacks/issues",
+                "source": "https://github.com/Samils/samils-devpacks/tree/main",
+                "wiki": "https://github.com/samils/samils-devpacks/wiki"
+            },
+            "time": "2022-09-19T13:35:54+00:00"
+        },
+        {
+            "name": "php_modules/xsami",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Samils/xsami.git",
+                "reference": "08d635d301c0bc915e838c78af98497db10348b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Samils/xsami/zipball/08d635d301c0bc915e838c78af98497db10348b9",
+                "reference": "08d635d301c0bc915e838c78af98497db10348b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.20"
+            },
+            "suggest": {
+                "php_modules/core": "",
+                "php_modules/fs": "",
+                "samils/callable-object": "",
+                "samils/klass-props": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ],
+                "psr-0": {
+                    "Sammy\\": "Sammy/"
+                },
+                "psr-4": {
+                    "Sammy\\": "Sammy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Agostinho Lopes",
+                    "email": "agostinhosaml832@gmail.com",
+                    "homepage": "https://agostinhosamil.github.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "xsami module for php.",
+            "homepage": "https://github.com/samils/xsami",
+            "keywords": [
+                "xsami"
+            ],
+            "support": {
+                "email": "base.samils@gmail.com",
+                "issues": "https://github.com/samils/xsami/issues",
+                "source": "https://github.com/Samils/xsami/tree/main",
+                "wiki": "https://github.com/samils/xsami/wiki"
+            },
+            "time": "2022-09-19T09:03:53+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "php_modules/core": 20,
+        "php_modules/sami": 20,
+        "php_modules/samils-devpacks": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.20"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

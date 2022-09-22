@@ -1,7 +1,0 @@
-@import { Fragment } from 'capsule'
-
-@def Pain ({ data: $users })
-  <Fragment />
-@end
-
-@export Pain

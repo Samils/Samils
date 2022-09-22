@@ -1,8 +1,0 @@
-@import { Fragment } from 'capsule'
-
-@def Photo
-  <Fragment />
-@end
-
-@export Photo
-

@@ -1,5 +1,0 @@
-@def Title $text
-	<h1 class="title">
-		%{ $text }
-	</h1>
-@end

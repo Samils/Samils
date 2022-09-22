@@ -1,6 +1,0 @@
-@export default do ({ data: $users })
-  <ul>
-    @each $user in $users
-      <li>%{ $user->name }</li>
-    @end
-  </ul>

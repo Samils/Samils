@@ -5,7 +5,7 @@
  *
  * @keywords Samils, ils, php framework
  * -----------------
- * @package Sammy\Packs\Samils
+ * @package Samils
  * - Autoload, application dependencies
  *
  * MIT License
@@ -29,22 +29,33 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ * 
+ * ====
+ * 
+ * THE CURRENT FILE IS THE ILS CORE 
+ * AUTOLOADER, CONTAING THE APPLICATION EXECUTION
+ * FLUX... SO THAT, IT SHOULD BE USED TO ENABLE
+ * OR UNABLE SOME OF THE ILS FEATURES IN ORDER
+ * HAVING A DIFFERENT BEHAVIOR ON IT ABOUT A 
+ * SPECIFIC MOMMENT OF THE SCRIPT FLUX.
+ * 
+ * @subpackage Autoloader
  */
-namespace Sammy\Packs\Samils {
-  use Configure;
-  /**
-   * - autoload
-   * php ils file to bootstrap
-   * the application and ils
-   * dependencies for running the
-   * current project
-   */
-  include_once dirname (__DIR__) . "/.sami/ls/autoload.php";
+namespace Samils {
+  use php\module;
 
+  require_once (dirname (dirname (__DIR__)) . '/vendor/autoload.php');
   /**
-   * @var ApplicationIndexFile
-   * - Application index file's where
-   * - the current application is bootstrapped
+   * - sml_consts
    */
-  include_once Configure::ApplicationIndexFile;
+  include_once (__DIR__ . '/sml_datas/sml_consts.php');
+  include_once (__DIR__ . '/sml_functions/index.php');
+
+  module::initialize_config();
+
+  $AppBootstrappers = dir_boot();
+
+  foreach ($AppBootstrappers as $AppBootstrapper) {
+    include_once $AppBootstrapper;
+  }
 }

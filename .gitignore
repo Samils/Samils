@@ -4,6 +4,10 @@ vendor
 
 storage/*/*
 !storage/.keep
+!storage/temp/.keep
+
+app/views/.dist/*/*
+!app/views/.dist/.keep
 
 desktop.ini
 
@@ -19,5 +23,3 @@ log/*/*
 # should now be used for production
 *.xphp
 *.php.lock
-
-composer.lock

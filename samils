@@ -52,7 +52,7 @@ namespace Sammy\Packs\Sami\Cli {
    * and boot it by using the ils directory boot.
    * -
    */
-  require (__DIR__ . '/.sami/ls/autoload');
+  require (__DIR__ . '/.sami/ls/autoload.php');
 
   if (Cli::Running ()) {
     Cli::Execute ();

@@ -5,6 +5,7 @@
   "type": "project",
   "license": "MIT",
   "homepage": "https://github.com/samils/samils",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Agostinho Lopes",

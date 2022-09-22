@@ -1,0 +1,12 @@
+button.ButtonContainer {
+  background: #00bfff;
+  padding: 12px 15px;
+  border: 1px solid #0D7395;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background: #139FCE;
+  }
+}

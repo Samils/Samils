@@ -1,0 +1,7 @@
+@import { ButtonContainer } from './styles.css'
+
+@def Button ({ $children })
+  <ButtonContainer>
+    %{ $children }
+  </ButtonContainer>
+@end

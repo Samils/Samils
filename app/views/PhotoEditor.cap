@@ -1,7 +1,0 @@
-@import { Fragment } from 'capsule'
-
-@def PhotoEditor
-  <Fragment />
-@end
-
-@export PhotoEditor

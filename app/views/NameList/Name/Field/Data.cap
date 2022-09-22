@@ -1,7 +1,0 @@
-@import { Fragment } from 'capsule'
-
-@def Data
-  <Fragment />
-@end
-
-@export Data
