@@ -12,10 +12,10 @@ alternates: true
 defaults:
   adapter: mysql
   host: <?= ENV['MYSQL_HOST'] ?>
-  port: 80
+  port: <?= ENV['MYSQL_PORT'] ?>
   charset: utf8
   user: <?= ENV['MYSQL_USER'] ?>
-  pass: null
+  pass: <?= ENV['MYSQL_PASS'] ?>
 
   # Timeout per synchronization for
   # each database used inside the current
@@ -28,15 +28,10 @@ defaults:
 
 development:
   db: Samils2_development_db
-  pass: mundomaluco
-  port: 4059
 
-  - alternate: SomeWrongDatas
-    pass: null
-    port: 8090
-  - alternate: SomeRightDatas2
-    pass: <?= ENV['MYSQL_PASS'] ?>
-    port: 3306
+  - alternate: AlternativeCredentials
+    user: root
+    pass: root
 
 test:
   db: Samils_test_db
