@@ -53,6 +53,11 @@ view engine datas:
 
   viewsDir: @views/.dist
 
+static:
+  path: build
+  revalidate: true
+  revalidate_interval: 24h
+
 application_orm: sami/base
 application_orm_config:
   models_base: false
