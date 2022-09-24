@@ -12,11 +12,11 @@
   <img alt="Localizely language progress badge" src="https://img.shields.io/badge/English%20(US)-97%25-green?style=for-the-badge">
 </p>
 
-# GOGUE Transpiler | Capsule
+# Alean Architecture | SOLID | MVC (Apsu, Sami, Sbr)
 
 ## Welcome on Ils
 
-- Alean Architecture | SOLID | MVC (Apsu, Sami, Sbr)
+- This is a short guide for getting started on ils
 
 ### LICENCE
 
