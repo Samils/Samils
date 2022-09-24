@@ -16,7 +16,7 @@
 
 ## Welcome on Ils
 
-- This is a short guide for getting started on ils
+- Alean Architecture | SOLID | MVC (Apsu, Sami, Sbr)
 
 ### LICENCE
 
