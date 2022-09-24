@@ -3,6 +3,15 @@
 # how will ils build the response for each
 # request done to the application scope.
 application_flux: MVC
+
+static:
+  path: build
+  revalidate: true
+  revalidate_interval: 24h
+
+application_server_flux:
+  static
+  applicationFlux
 # view engine manager
 # is a php module for
 # managing the view engine
@@ -15,13 +24,13 @@ application_flux: MVC
 # by executing it's init, config, run and render
 # function included inside the main class whish is
 # named as the view engine (with the same name)
-view engine manager: view-engine
+view_engine_manager: view-engine
 
-view engine scripts:
+view_engine_scripts:
   default:
     views set_reference --php-module
 
-view engine datas:
+view_engine_datas:
   # view engine args
   # Arguments to send to the view engine constructor
   # in order automatically execute it's methods and
@@ -53,11 +62,6 @@ view engine datas:
 
   viewsDir: @views/.dist
 
-static:
-  path: build
-  revalidate: true
-  revalidate_interval: 24h
-
 application_orm: sami/base
 application_orm_config:
   models_base: false
@@ -69,7 +73,6 @@ application_orm_config:
   database:
     alternates: true
     alternates_base: Base
-
 
 application_server_paths:
   #@classes: (__classes__)
