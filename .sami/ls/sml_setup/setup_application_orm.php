@@ -31,7 +31,8 @@
  * SOFTWARE.
  */
 namespace Sammy\Packs\Samils {
-  use Sami\Base as SamiBase;
+  use Sami\Base as SbrCoreModel;
+  use Sammy\Packs\Sami\Base as Sbr;
   use Sammy\Packs\Samils\ApplicationServer;
   /**
    * Samils\Functions
@@ -72,13 +73,14 @@ namespace Sammy\Packs\Samils {
    */
   function setup_application_orm () {
     /**
-     * Create a SamiBase global hook
+     * Create a SbrCoreModel global hook
      */
-    SamiBase::addHook (null, true, function () {
+    SbrCoreModel::addHook (null, true, function () {
       ApplicationServer::configureApplicationORM ();
     });
 
-    SamiBase::baseConfig ();
+    Sbr::baseConfig ();
+
   }}
 
   setup_application_orm ();
