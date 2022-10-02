@@ -30,7 +30,6 @@ development:
   db: Samils2_development_db
 
   - alternate: AlternativeCredentials
-    user: root
     pass: root
 
 test:
@@ -38,27 +37,4 @@ test:
   timeout_per_sync: 10m
 
 production:
-  user: <?= ENV['STONE_USER'] ?>
-  pass: <?= ENV['STONE_PASS'] ?>
-  db:   <?= ENV['STONE_DATABASE'] ?>
-
-  - alternate:
-    adapter: mysql
-    host: <?= ENV['MYSQL_HOST'] ?>
-    user: <?= ENV['MYSQL_USER'] ?>
-    pass: <?= ENV['MYSQL_PASS'] ?>
-
-    - alternate:
-      host: <?= ENV['MYSQL_HEROKU_HOST'] ?>
-    - alternate:
-      host: <?= ENV['MYSQL_CLOUD9_HOST'] ?>
-
-  - alternate:
-    adapter: pg
-    host: <?= ENV['PG_HOST'] ?>
-
-    - alternate:
-      host: <?= ENV['PG_HEROKU_HOST'] ?>
-    - alternate:
-      host: <?= ENV['PG_CLOUD9_HOST'] ?>
-
+  db: <?= ENV['MYSQL_PRODUCTION_DB_NAME'] ?>

@@ -18,6 +18,8 @@
 
 - This is a short guide for getting started on ils
 
+The first thing to know about Samils is its...
+
 ### LICENCE
 
 MIT License
