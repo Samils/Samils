@@ -9,7 +9,6 @@
  * - Autoload, application dependencies
  */
 namespace Samils\Datas\Consts {
-  use Configure;
 
   function def ( $const, $value = null ) {
     $areStrings = function ($values) {
@@ -28,34 +27,22 @@ namespace Samils\Datas\Consts {
     };
 
     if ($areStrings (func_get_args ())) {
-      $value = join (DIRECTORY_SEPARATOR,
-        array_slice (func_get_args(), 1, func_num_args ())
-      );
+      $value = join (DIRECTORY_SEPARATOR, array_slice (func_get_args(), 1, func_num_args ()));
     }
 
     defined ($const) or define ($const, $value);
   }
   # '.ls' folder absolute path
   def ('ls', dirname (__DIR__));
-  def ('approot', dirname(dirname(ls)));
+  def ('approot', dirname (dirname (ls)));
 
   def ('DS', DIRECTORY_SEPARATOR );
   def ('VENDOR_DIR', approot, '/vendor/php_modules/');
 
-  # Include Samils Live Configuration File
-  # Used by ils to lively configure the
-  # current application based on informations
-  # inside the '.config.php' module in the root
-  # folder of the ils application
-  # it contains data about the root folder
-  # and sub folders, the application name
-  # and each feature being used by the
-  # application dependencies bootstrapper
-  # [autoload]
-  def ('__root__', Configure::ApplicationRoot);
+  def ('__root__', dirname (dirname (ls)));
   def ('__ils__', __root__, '.sami', 'ls');
   def ('__bin__', __root__, '.sami', 'ls', '.bin');
-  def ('__appdir', __root__, 'app');
+  def ('__appdir__', __root__, 'app');
 
   def ('__files__', __root__, 'files');
   def ('__log__', __root__, 'log');
@@ -77,6 +64,5 @@ namespace Samils\Datas\Consts {
   def ('__system__', __ils__, 'sml_system');
   def ('__setups__', __ils__, 'sml_setup');
 
-  def ('__app__', constant ('Configure::ApplicationModule'));
   def ('ILS_CLI', false );
 }

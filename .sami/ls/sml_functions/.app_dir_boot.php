@@ -1,13 +1,10 @@
 <?php
 
 namespace Application\Environment\Base {
-  requires('sami/router');
-  requires('sami/helper');
-  requires('sami/module');
-  requires('sami/middle');
-
   use Sammy\Packs\Sami\ModuleBootstrapper;
+  use ENV;
 
+  use function Samils\Datas\Consts\def;
   use function Samils\dir_boot;
   /**
    * Boot up the controllers directory
@@ -98,24 +95,24 @@ namespace Application\Environment\Base {
      * the app/modules directory.
      */
     include_once (ApplicationModuleFilePath);
-    /**
-     * Boot up the modules directory
-     * inside the 'app' base directory.
-     * -
-     * This feature provides an instance of
-     * some of the ils application components
-     * that should be accessible from the rest
-     * of the application flux.
-     * -
-     * The basis of the current ils application
-     * component're being loaded in order getting
-     * started with the main module configurations,
-     * wich should give the possibility to use the
-     * rest of the module insluded inside the current
-     * application.
-     */
-    dir_boot (__modules__);
   }
+  /**
+   * Boot up the modules directory
+   * inside the 'app' base directory.
+   * -
+   * This feature provides an instance of
+   * some of the ils application components
+   * that should be accessible from the rest
+   * of the application flux.
+   * -
+   * The basis of the current ils application
+   * component're being loaded in order getting
+   * started with the main module configurations,
+   * wich should give the possibility to use the
+   * rest of the module insluded inside the current
+   * application.
+   */
+  dir_boot (__modules__);
   /**
    * @constant ApplicationHelperFile
    * An absolute path containg a reference
@@ -151,6 +148,7 @@ namespace Application\Environment\Base {
      */
     . '/application_helper.php'
   );
+
   /**
    * Make sure the application helper file is
    * where it has to, in order avoiding to see
@@ -163,19 +161,21 @@ namespace Application\Environment\Base {
   }
 
   dir_boot (__helpers__);
+
+  $ilsEnv = ($env = ENV::Get ('ILS_ENV')) ? $env : 'production';
+
   /**
    * @const Environment
    * - Current environment configuration
    * - file absolute path
    */
-  const Environment = \Sami\Environment\Settings;
-  const CONSTRUCTORS = __config__ . '/constructors/';
+  def ('Environment', ENV_FILE_DIR, join ('.', [strtolower ($ilsEnv), 'php']));
 
-  if (in_array (php_sapi_name (), ['cli'])) {
-    dir_boot (CONSTRUCTORS . 'console');
-  } else {
-    dir_boot (CONSTRUCTORS . 'server');
-  }
+  dir_boot (join (DIRECTORY_SEPARATOR, [
+    __config__,
+    'constructors',
+    in_array (php_sapi_name (), ['cli']) ? 'console' : 'server'
+  ]));
 
   ModuleBootstrapper::Bootstrap ();
   /**
